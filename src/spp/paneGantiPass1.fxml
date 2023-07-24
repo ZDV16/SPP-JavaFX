@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GantiPass1Controller">
+   <children>
+      <Label layoutX="76.0" layoutY="89.0" text="Nama Pengguna">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="169.0" text="Kata Sandi Lama">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="249.0" text="Kata Sandi Baru">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="hahha" layoutX="252.0" layoutY="89.0" prefHeight="17.0" prefWidth="58.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="paslam" layoutX="236.0" layoutY="172.0" prefHeight="25.0" prefWidth="170.0" />
+      <PasswordField fx:id="pasbar" layoutX="236.0" layoutY="252.0" onMouseClicked="#hehpass" onMouseEntered="#hehpass" onMouseExited="#hehpass" onMouseMoved="#hehpass" onMousePressed="#hehpass" onMouseReleased="#hehpass" prefHeight="25.0" prefWidth="170.0" />
+      <Button layoutX="491.0" layoutY="30.0" mnemonicParsing="false" onAction="#kembali" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: black;" text="Kembali" textFill="WHITE" />
+      <Button layoutX="262.0" layoutY="331.0" mnemonicParsing="false" onAction="#simpan" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: black;" text="Simpan" textFill="WHITE" />
+      <Label fx:id="aikamu" layoutX="423.0" layoutY="256.0" prefHeight="17.0" prefWidth="176.0" />
+      <Label fx:id="hahha" layoutX="245.0" layoutY="91.0" prefHeight="17.0" prefWidth="210.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

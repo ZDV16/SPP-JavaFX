@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bg-style" stylesheets="@desain.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuUtamaWaKelController">
+   <children>
+      <ImageView fitHeight="346.0" fitWidth="414.0" layoutX="127.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.2;">
+         <image>
+            <Image url="@smk.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="118.0" layoutY="66.0" prefHeight="263.0" prefWidth="349.0" style="-fx-border-width: 4; -fx-border-color: brown; -fx-border-radius: 5;" />
+      <Label layoutX="175.0" layoutY="102.0" text="Menu Utama Wali Kelas" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="157.0" layoutY="236.0" mnemonicParsing="false" onAction="#cek" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: white;" text="Cek Murid Kelas">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button layoutX="315.0" layoutY="236.0" mnemonicParsing="false" onAction="#ganpas" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: white;" text="Ganti Password">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button layoutX="527.0" layoutY="16.0" mnemonicParsing="false" onAction="#kembali" style="-fx-background-color: white;" text="Kembali">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Label fx:id="hahha" layoutX="47.0" layoutY="42.0" prefHeight="17.0" prefWidth="59.0" />
+   </children>
+</AnchorPane>

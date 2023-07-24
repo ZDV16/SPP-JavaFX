@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffa07a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuPetugasController">
+   <children>
+      <TextField fx:id="fld_nis" layoutX="111.0" layoutY="76.0" onKeyPressed="#enter" onKeyReleased="#release" />
+      <Label layoutX="78.0" layoutY="76.0" text="NIS" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="cari" layoutX="268.0" layoutY="76.0" mnemonicParsing="false" onAction="#cari" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: white;" text="Cari" />
+      <TextField fx:id="fld_nasis" layoutX="111.0" layoutY="118.0" />
+      <TextField fx:id="fld_kelas" layoutX="111.0" layoutY="162.0" />
+      <Label layoutX="17.0" layoutY="118.0" text="Nama Siswa" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="162.0" text="Kelas Siswa" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="jan" layoutX="383.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#price" text="Januari" textFill="WHITE" />
+      <CheckBox fx:id="feb" layoutX="383.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#price" text="Februari" textFill="WHITE" />
+      <CheckBox fx:id="mar" layoutX="383.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#price" text="Maret" textFill="WHITE" />
+      <CheckBox fx:id="apr" layoutX="383.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#price" text="April" textFill="WHITE" />
+      <CheckBox fx:id="may" layoutX="383.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#price" text="Mei" textFill="WHITE" />
+      <CheckBox fx:id="jun" layoutX="383.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#price" text="Juni" textFill="WHITE" />
+      <ComboBox fx:id="tahunajaran" layoutX="382.0" layoutY="93.0" onAction="#pilihan" prefHeight="25.0" prefWidth="121.0" promptText="Tahun Ajaran" style="-fx-background-color: white;" />
+      <Button fx:id="btn_bayar" layoutX="397.0" layoutY="361.0" mnemonicParsing="false" onAction="#bayar" prefHeight="25.0" prefWidth="195.0" style="-fx-background-color: white;" text="Bayar" />
+      <Label fx:id="time" layoutX="146.0" layoutY="252.0" prefHeight="34.0" prefWidth="189.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="jul" layoutX="480.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#price" text="Juli" textFill="WHITE" />
+      <CheckBox fx:id="aug" layoutX="480.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#price" text="Agustus" textFill="WHITE" />
+      <CheckBox fx:id="sep" layoutX="480.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#price" text="September" textFill="WHITE" />
+      <CheckBox fx:id="okt" layoutX="480.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#price" text="Oktober" textFill="WHITE" />
+      <CheckBox fx:id="nov" layoutX="480.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#price" text="November" textFill="WHITE" />
+      <CheckBox fx:id="dec" layoutX="480.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#price" text="Desember" textFill="WHITE" />
+      <Button fx:id="kembali" layoutX="512.0" layoutY="14.0" mnemonicParsing="false" onAction="#kembali" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: white;" text="Kembali" />
+      <Label fx:id="message" layoutX="147.0" layoutY="302.0" prefHeight="27.0" prefWidth="207.0" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="299.0" prefHeight="34.0" prefWidth="75.0" text="Harga Rp." textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="213.0" text="ID Pembayaran" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="idp" layoutX="147.0" layoutY="213.0" prefHeight="27.0" prefWidth="121.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="256.0" prefHeight="27.0" prefWidth="64.0" text="Tanggal" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="hahha" layoutX="422.0" layoutY="42.0" />
+      <Label layoutX="240.0" layoutY="-1.0" text="Transaksi SPP" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="344.0" prefHeight="34.0" prefWidth="59.0" text="Sisa Rp." textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="tunggak" layoutX="148.0" layoutY="344.0" prefHeight="30.0" prefWidth="189.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

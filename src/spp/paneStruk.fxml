@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="491.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.StrukController">
+   <children>
+      <Label layoutX="55.0" layoutY="65.0" text="NIS Siswa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="109.0" text="Nama Siswa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="154.0" text="Kelas Siswa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="207.0" text="Bulan Yang Dibayar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="258.0" text="Tanggal Pembayaran">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="306.0" text="Nama Petugas">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="352.0" text="ID Pembayaran">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nis" layoutX="255.0" layoutY="65.0" prefHeight="27.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nama" layoutX="255.0" layoutY="109.0" prefHeight="27.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="kelas" layoutX="255.0" layoutY="154.0" prefHeight="27.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="bulan" layoutX="255.0" layoutY="207.0" prefHeight="27.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tanggal" layoutX="255.0" layoutY="258.0" prefHeight="27.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nagas" layoutX="255.0" layoutY="306.0" prefHeight="27.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="id" layoutX="255.0" layoutY="352.0" prefHeight="27.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="14.0" text="Struk Transaksi">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

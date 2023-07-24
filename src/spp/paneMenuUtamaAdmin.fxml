@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bg-style" stylesheets="@desain.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuUtamaAdminController">
+   <children>
+      <Button fx:id="keluar" layoutX="529.0" layoutY="393.0" mnemonicParsing="false" onAction="#keluar" prefHeight="35.0" prefWidth="92.0" style="-fx-background-color: brown;" text="KELUAR" textFill="WHITE" />
+      <ImageView fitHeight="346.0" fitWidth="414.0" layoutX="135.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.2;">
+         <image>
+            <Image url="@smk.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="72.0" layoutY="62.0" prefHeight="302.0" prefWidth="478.0" style="-fx-border-color: brown; -fx-border-width: 4; -fx-border-radius: 5;">
+         <children>
+            <Button fx:id="edit" layoutX="62.0" layoutY="132.0" mnemonicParsing="false" onAction="#edit" prefHeight="52.0" prefWidth="166.0" style="-fx-background-color: white;" text="Edit Petugas">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></Button>
+            <Button fx:id="buat" layoutX="268.0" layoutY="132.0" mnemonicParsing="false" onAction="#buat" prefHeight="52.0" prefWidth="166.0" style="-fx-background-color: white;" text="Buat Petugas">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></Button>
+            <Label layoutX="145.0" layoutY="37.0" prefHeight="52.0" prefWidth="205.0" text="Menu Utama Admin" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="165.0" layoutY="218.0" mnemonicParsing="false" onAction="#report" prefHeight="52.0" prefWidth="166.0" style="-fx-background-color: white;" text="Report">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fx:id="namasibangsat" layoutX="418.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="135.00000482797623">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

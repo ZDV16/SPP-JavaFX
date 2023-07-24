@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GantiPassController">
+   <children>
+      <Label layoutX="234.0" layoutY="30.0" prefHeight="31.0" prefWidth="145.0" text="Ganti Password">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="89.0" prefHeight="31.0" prefWidth="159.0" text="Nama Pengguna">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="155.0" prefHeight="31.0" prefWidth="145.0" text="Password lama">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="232.0" prefHeight="31.0" prefWidth="145.0" text="Password baru">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="251.0" layoutY="337.0" mnemonicParsing="false" onAction="#simpan" prefHeight="38.0" prefWidth="76.0" style="-fx-background-color: black;" text="Simpan" textFill="WHITE" />
+      <Button fx:id="kembali" layoutX="482.0" layoutY="33.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: black;" text="Kembali" textFill="#f8f7f7" />
+      <Label fx:id="hahha" layoutX="215.0" layoutY="89.0" prefHeight="25.0" prefWidth="180.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="paslam" layoutX="215.0" layoutY="158.0" prefHeight="25.0" prefWidth="180.0" />
+      <PasswordField fx:id="pasbar" layoutX="215.0" layoutY="235.0" onMouseClicked="#hehpass" onMouseEntered="#hehpass" onMouseExited="#hehpass" onMouseMoved="#hehpass" onMousePressed="#hehpass" onMouseReleased="#hehpass" prefHeight="25.0" prefWidth="180.0" />
+      <Label fx:id="aikamu" layoutX="410.0" layoutY="239.0" prefHeight="17.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>

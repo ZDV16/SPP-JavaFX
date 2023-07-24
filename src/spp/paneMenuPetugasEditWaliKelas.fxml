@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cd5c5c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuPetugasEditWaliKelasController">
+   <children>
+      <TableView fx:id="TableDB" layoutX="-1.0" layoutY="77.0" prefHeight="323.0" prefWidth="600.0">
+         <columns>
+            <TableColumn id="col_name" fx:id="col_id" onEditCommit="#gantiID" prefWidth="107.0" text="Nama Pengguna" />
+            <TableColumn id="col_id" fx:id="col_nama" onEditCommit="#gantiNama" prefWidth="159.0" text="Nama" />
+            <TableColumn fx:id="col_nip" prefWidth="163.0" text="NIP" />
+            <TableColumn fx:id="col_kelas" onEditCommit="#gantiKelas" prefWidth="170.0" text="Kelas" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_kembali" layoutX="458.0" layoutY="24.0" mnemonicParsing="false" onAction="#kembali" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #ffff;" text="Kembali" />
+      <Button fx:id="hapus" layoutY="49.0" mnemonicParsing="false" onAction="#hapusgan" style="-fx-background-color: #ffff;" text="Hapus" />
+      <Button fx:id="segarrrrr" layoutX="108.0" layoutY="49.0" mnemonicParsing="false" onAction="#refrezh" style="-fx-background-color: #ffff;" text="Segarkan" />
+      <TextField fx:id="cari" layoutX="207.0" layoutY="37.0" onKeyPressed="#enter" promptText="NIP/Nama/ID" />
+      <Button fx:id="carigaes" layoutX="356.0" layoutY="37.0" mnemonicParsing="false" onAction="#careeeeee" style="-fx-background-color: #ffff;" text="Cari" />
+      <Label fx:id="hahha" layoutX="11.0" layoutY="16.0" prefHeight="17.0" prefWidth="65.0" />
+      <Label layoutX="217.0" layoutY="-1.0" text="Edit Wali Kelas" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

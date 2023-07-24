@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cd5c5c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuPetugasEditSiswaController">
+   <children>
+      <TableView fx:id="TableDB" layoutX="-1.0" layoutY="77.0" prefHeight="323.0" prefWidth="600.0">
+         <columns>
+            <TableColumn id="col_nama" fx:id="col_nama" onEditCommit="#gantiNama" prefWidth="183.0" text="Nama" />
+            <TableColumn id="col_kelas" fx:id="col_kelas" onEditCommit="#gantiKelas" prefWidth="231.0" text="Kelas" />
+            <TableColumn id="col_nis" fx:id="col_nip" prefWidth="185.0" text="NIS" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_kembali" layoutX="458.0" layoutY="24.0" mnemonicParsing="false" onAction="#kembali" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #ffff;" text="Kembali" />
+      <Button fx:id="hapus" layoutY="49.0" mnemonicParsing="false" onAction="#hapusgan" style="-fx-background-color: #ffff;" text="Hapus" />
+      <Button fx:id="segarrrrr" layoutX="108.0" layoutY="49.0" mnemonicParsing="false" onAction="#refrezh" style="-fx-background-color: #ffff;" text="Segarkan" />
+      <TextField fx:id="cari" layoutX="207.0" layoutY="37.0" onKeyPressed="#enter" promptText="NIP/Nama/ID" />
+      <Button fx:id="carigaes" layoutX="356.0" layoutY="37.0" mnemonicParsing="false" onAction="#careeeeee" style="-fx-background-color: #ffff;" text="Cari" />
+      <Label fx:id="hahha" layoutX="14.0" layoutY="16.0" />
+      <Label layoutX="255.0" layoutY="-1.0" text="Edit Siswa" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

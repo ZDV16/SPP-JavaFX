@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="678.0" style="-fx-background-color: #cd5c5c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuAdminBuatController">
+   <children>
+      <TextField fx:id="fld_nis" layoutX="241.0" layoutY="76.0" onKeyReleased="#release" onMouseClicked="#hehnip" onMouseEntered="#hehnip" onMouseExited="#hehnip" onMousePressed="#hehnip" onMouseReleased="#hehnip" prefHeight="25.0" prefWidth="240.0" />
+      <Label layoutX="237.0" layoutY="24.0" text="Pendaftaran Petugas Baru" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="74.0" prefHeight="30.0" prefWidth="34.0" text="NIP" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="138.0" prefHeight="30.0" prefWidth="54.0" text="Nama" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fld_nama" layoutX="241.0" layoutY="140.0" onMouseClicked="#hehnama" onMouseEntered="#hehnama" onMouseExited="#hehnama" onMousePressed="#hehnama" onMouseReleased="#hehnama" prefHeight="25.0" prefWidth="240.0" />
+      <Label layoutX="68.0" layoutY="198.0" prefHeight="30.0" prefWidth="154.0" text="Nama Pengguna" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fld_id" layoutX="241.0" layoutY="200.0" onKeyReleased="#release" onMouseClicked="#hehid" onMouseEntered="#hehid" onMouseExited="#hehid" onMousePressed="#hehid" onMouseReleased="#hehid" prefHeight="25.0" prefWidth="240.0" />
+      <Label layoutX="128.0" layoutY="256.0" prefHeight="30.0" prefWidth="94.0" text="Kata Sandi" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fld_pass" layoutX="241.0" layoutY="259.0" onMouseClicked="#hehpass" onMouseEntered="#hehpass" onMouseExited="#hehpass" onMousePressed="#hehpass" onMouseReleased="#hehpass" prefHeight="25.0" prefWidth="240.0" />
+      <Button fx:id="simpan" layoutX="265.0" layoutY="331.0" mnemonicParsing="false" onAction="#simpan" prefHeight="42.0" prefWidth="205.0" style="-fx-background-color: #fff;" text="Simpan" />
+      <Button layoutX="588.0" layoutY="11.0" mnemonicParsing="false" onAction="#kembali" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #fff;" text="Kembali" textFill="#171717" />
+      <Button layoutX="313.0" layoutY="25.0" mnemonicParsing="false" onAction="#load" prefHeight="25.0" prefWidth="54.0" text="Button" visible="false" />
+      <Label fx:id="nip" layoutX="482.0" layoutY="81.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE" />
+      <Label fx:id="pass" layoutX="482.0" layoutY="263.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE" />
+      <Label fx:id="id" layoutX="479.0" layoutY="200.0" prefHeight="25.0" prefWidth="197.0" textFill="WHITE" />
+      <Label fx:id="nama" layoutX="482.0" layoutY="144.0" prefHeight="17.0" prefWidth="190.0" textFill="WHITE" />
+      <Label fx:id="id1" layoutX="479.0" layoutY="225.0" prefHeight="25.0" prefWidth="197.0" textFill="WHITE" />
+   </children>
+</AnchorPane>
